@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8"><title>Libraries - OPPRO.NET</title><link rel="stylesheet" href="css/style.css"></head>
+    <meta charset="UTF-8">
+    <title>Libraries - OPPRO.NET</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <header><div class="container"><nav><div class="logo">OPPRO.NET Development</div><ul class="nav-menu">
+    <canvas id="particleCanvas"></canvas>
+    <header><div class="container"><nav><div class="logo">OPPRO<span>.NET</span></div><ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="bots.html">Bots</a></li>
         <li><a href="libraries.html" class="active">Libraries</a></li>
         <li><a href="projects.html">Projekte</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
     </ul></nav></div></header>
 
     <main class="container">
-        <section class="page-header">
-            <h1>Python Libraries</h1>
-            <p class="subtitle">Tools, die wir für die Community entwickeln.</p>
+        <section class="hero-visual">
+            <h1 class="main-title">Python <span>Libraries</span></h1>
+            <p class="hero-subtext">Tools, die wir für die Developer-Community entwickeln.</p>
         </section>
 
-        <div class="card">
+        <div class="card feature-card" style="max-width: 800px; margin: 0 auto;">
+            <div class="icon-wrap color-1">📦</div>
             <span class="badge badge-open">Verfügbar auf PyPI</span>
             <h2>SimpleColoredLogs</h2>
             <p>Verwandle langweilige Python-Logs in saubere, farbig markierte Konsolenausgaben. Einfach zu integrieren und extrem schnell.</p>
-            <div class="copy-box" onclick="copyToClipboard('pip install SimpleColoredLogs')">
-                <code>pip install SimpleColoredLogs</code>
-                <span class="copy-icon">📋</span>
+            
+            <div class="terminal-box" onclick="copyToClipboard('pip install SimpleColoredLogs')" style="background: #000; padding: 20px; border-radius: 12px; margin: 20px 0; border: 1px solid var(--primary); cursor: pointer; position: relative;">
+                <code style="color: #4ade80;">$ pip install SimpleColoredLogs</code>
+                <span style="position: absolute; right: 20px; color: var(--text-dim);">📋</span>
             </div>
-            <ul style="margin-top: 15px; color: var(--text-dim); list-style: '✓ '; padding-left: 20px;">
-                <li>Einfache Integration in Py-cord</li>
-                <li>Anpassbare Farbschemata</li>
-                <li>Asynchrone Unterstützung</li>
+
+            <ul style="margin-top: 25px; color: var(--text-dim); list-style: none;">
+                <li style="margin-bottom: 10px;"><span style="color: #4ade80;">✓</span> Einfache Integration in Py-cord</li>
+                <li style="margin-bottom: 10px;"><span style="color: #4ade80;">✓</span> Anpassbare Farbschemata (ANSI)</li>
+                <li style="margin-bottom: 10px;"><span style="color: #4ade80;">✓</span> Optimiert für asynchrone Tasks</li>
             </ul>
         </div>
     </main>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            alert("Befehl kopiert: " + text);
+        }
+    </script>
+    <script src="js/particles.js"></script>
 </body>
-</html> 
+</html>

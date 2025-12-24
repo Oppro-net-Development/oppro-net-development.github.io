@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8"><title>Projekte - OPPRO.NET</title><link rel="stylesheet" href="css/style.css"></head>
+    <meta charset="UTF-8">
+    <title>Projekte - OPPRO.NET</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <header><div class="container"><nav><div class="logo">OPPRO.NET Development</div><ul class="nav-menu">
+    <canvas id="particleCanvas"></canvas>
+    <header><div class="container"><nav><div class="logo">OPPRO<span>.NET</span></div><ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="bots.html">Bots</a></li>
         <li><a href="libraries.html">Libraries</a></li>
         <li><a href="projects.html" class="active">Projekte</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
     </ul></nav></div></header>
 
     <main class="container">
-        <section class="page-header">
-            <h1>Unsere Projekte</h1>
-            <p class="subtitle">Ein Einblick in unsere Entwicklungen und Tech-Stacks.</p>
+        <section class="hero-visual">
+            <h1 class="main-title">Unsere <span>Projekte</span></h1>
+            <p class="hero-subtext">Ein Einblick in unsere Tech-Stacks und laufenden Entwicklungen.</p>
         </section>
 
         <div class="grid">
-            <div class="card">
+            <div class="card feature-card">
                 <span class="badge badge-open">Public / Open</span>
-                <h2>ManagerX</h2>
-                <p>Umfangreiches Management-System für Discord Server mit Fokus auf Moderation und Utility.</p>
+                <h3>ManagerX</h3>
+                <p>Fokus: Moderation & Utility-Automatisierung.</p>
                 <div style="margin-top: 15px;">
                     <span class="tech-pill">Python</span><span class="tech-pill">Py-cord</span><span class="tech-pill">SQlite</span>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card feature-card">
                 <span class="badge badge-no-os">Public / Closed Source</span>
-                <h2>RadioBot</h2>
-                <p>Stabiles Radio-Streaming System für Discord. 24/7 Musik-Bot Lösung für jede Community.</p>
+                <h3>RadioBot</h3>
+                <p>Fokus: 24/7 Audio-Streaming & Stabilität.</p>
                 <div style="margin-top: 15px;">
-                    <span class="tech-pill">Py-cord</span>
+                    <span class="tech-pill">Py-cord</span><span class="tech-pill">Lavalink</span>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card feature-card">
                 <span class="badge badge-private">Privat</span>
-                <h2>Network</h2>
-                <p>Ein exklusives Netzwerk-Bot System zur Synchronisation und Verwaltung verbundener Discord-Strukturen.</p>
+                <h3>Network</h3>
+                <p>Fokus: Globale Daten-Synchronisation.</p>
                 <div style="margin-top: 15px;">
-                    <span class="tech-pill">Py-cord</span><span class="tech-pill">SQlite</span>
+                    <span class="tech-pill">Py-cord</span><span class="tech-pill">SQlite</span><span class="tech-pill">Redis</span>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card feature-card">
                 <span class="badge badge-open">Library</span>
-                <h2>SimpleColoredLogs</h2>
-                <p>Unsere hauseigene Library für schönes Logging in der Konsole. Optimiert für Python-Entwickler.</p>
+                <h3>SimpleColoredLogs</h3>
+                <p>Fokus: Developer Experience & CLI UI.</p>
                 <div style="margin-top: 15px;">
-                    <span class="tech-pill">Python</span><span class="tech-pill">CLI</span><span class="tech-pill">Open Source</span>
+                    <span class="tech-pill">Python</span><span class="tech-pill">Open Source</span>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer><p>&copy; 2025 OPPRO.NET Development</p></footer>
+    <script src="js/particles.js"></script>
 </body>
 </html>

@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8"><title>Bots - OPPRO.NET Development</title><link rel="stylesheet" href="css/style.css"></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bots - OPPRO.NET Development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <header><div class="container"><nav><div class="logo">OPPRO.NET</div><ul class="nav-menu">
+    <canvas id="particleCanvas"></canvas>
+    <header><div class="container"><nav><div class="logo">OPPRO<span>.NET</span></div><ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="bots.html" class="active">Bots</a></li>
         <li><a href="libraries.html">Libraries</a></li>
         <li><a href="projects.html">Projekte</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
     </ul></nav></div></header>
 
     <main class="container">
-        <section class="page-header">
-            <h1>Unsere Discord Bots</h1>
-            <p class="subtitle">Vom Multi-Manager bis zum privaten Netzwerk.</p>
+        <section class="hero-visual">
+            <div class="status-pill"><span class="pulse"></span> Live auf über 500 Servern</div>
+            <h1 class="main-title">Discord <span>Bots</span></h1>
+            <p class="hero-subtext">Leistungsstarke Tools für deine Community. Von Moderation bis High-End Audio.</p>
         </section>
 
         <div class="grid">
-            <div class="card">
+            <div class="card feature-card">
+                <div class="icon-wrap color-3">🤖</div>
                 <span class="badge badge-open">Offen / Public</span>
                 <h2>ManagerX</h2>
                 <p>Der ultimative All-in-One Bot für Server-Management. Vollgepackt mit Features für Moderation und Utility.</p>
-                <div style="margin-top:20px;"><a href="#" class="btn btn-primary">Bot einladen</a></div>
+                <div class="hero-actions" style="margin-top:25px; flex-direction: column; gap: 10px;">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1368201272624287754&permissions=1669118160151&integration_type=0&scope=bot" class="btn-glow" style="text-align: center;">Bot einladen</a>
+                    <a href="https://development.oppro-network.de/ManagerX/" class="btn-secondary-glow" style="text-align: center;">Webseite</a>
+                </div>
             </div>
 
-            <div class="card">
-                <span class="badge badge-open">Offen (Nicht Open Source)</span>
+            <div class="card feature-card">
+                <div class="icon-wrap color-2">📻</div>
+                <span class="badge badge-open">Offen (Closed Source)</span>
                 <h2>RadioBot</h2>
-                <p>High-Quality Audio-Streaming für deinen Discord Server. 24/7 Radio ohne Lags.</p>
-                <div style="margin-top:20px;"><a href="#" class="btn btn-primary">Jetzt hören</a></div>
+                <p>High-Quality Audio-Streaming für deinen Discord Server. Erlebe 24/7 Radio ohne Lags in glasklarer Qualität.</p>
+                <div class="hero-actions" style="margin-top:25px;">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1249695881494794301&permissions=40136535442176&integration_type=0&scope=bot" class="btn-glow" style="width: 100%; text-align: center;">Bot einladen</a>
+                </div>
             </div>
 
-            <div class="card">
+            <div class="card feature-card">
+                <div class="icon-wrap color-1">🌐</div>
                 <span class="badge badge-private">Privat</span>
                 <h2>Network</h2>
-                <p>Ein spezialisiertes System zur Vernetzung von Discord-Strukturen. Exklusiv für interne Partner.</p>
+                <p>Ein spezialisiertes System zur Vernetzung von Discord-Strukturen. Exklusiv für interne Partner von OPPRO.</p>
             </div>
         </div>
     </main>
+    <script src="js/particles.js"></script> 
 </body>
 </html>
