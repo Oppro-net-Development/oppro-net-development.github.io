@@ -98,6 +98,8 @@ nav { display: flex; justify-content: space-between; align-items: center; }
 }
 .badge-open { background: rgba(74, 222, 128, 0.1); color: #4ade80; border: 1px solid #4ade80; }
 
+.badge-live { background: rgba(88, 101, 242, 0.1); color: #4ade80; border: 1px solid #4ade80; }
+
 .tech-pill {
     background: rgba(255, 255, 255, 0.05);
     padding: 4px 10px; border-radius: 6px;
